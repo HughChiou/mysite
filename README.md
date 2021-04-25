@@ -28,3 +28,20 @@
 | python manage.py -h <command_name>          | 查看 Django commands 的使用方法 |
 | python manage.py runserver                  | 啟動開發伺服器                  |
 | python manage.py startapp <app_name>        | 新增 Django app                 |
+| python manage.py createsuperuser            | 新增 Django 管理者帳號          |
+
+## 2021-4-11
+---
+
+
+### Template Tags
+| 語法                                      | 說明                                               |
+| ----------------------------------------- | -------------------------------------------------- |
+| `{% for ... in ... %}...{% endfor %}`     | 類似 Python 的 for 迴圈，反覆執行 for 區塊中的內容 |
+| `{% if %} ... {% else %} ... {% endif %}` | 在 Template Tags 中進行 if／else 的邏輯判斷        |
+
+
+### Template Filters
+| 語法         | 說明                      |
+| ------------ | ------------------------- |
+| `{{ value \| date:<date_format> }}` | 可以將`datetime`型別的物件，以指定的時間格式 Date Format 輸出 |
